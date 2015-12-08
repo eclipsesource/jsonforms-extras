@@ -1,7 +1,7 @@
 {
   "name": "jsonforms-extras",
   "private": true,
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Additional components for JSONForms",
   "repository": "https://github.com/eclipsesource/jsonforms-extras",
   "license": "MIT",

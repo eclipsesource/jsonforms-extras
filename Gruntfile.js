@@ -167,7 +167,7 @@ module.exports = function(grunt) {
                 'tests/**/*.js.map'
             ],
             downloads: [
-                'examples/bower_components',
+                'bower_components',
                 'node_modules'
             ],
             coverage: [
@@ -186,7 +186,7 @@ module.exports = function(grunt) {
                 'tests/**/*.js',
                 '!tests/**/*.conf.js',
                 'tests/**/*.js.map',
-                'examples/bower_components',
+                'bower_components',
                 'node_modules',
                 'coverage',
                 '.tscache'
@@ -214,11 +214,11 @@ module.exports = function(grunt) {
 
         bump: {
             options: {
-                files: ['package.json'],
+                files: ['package.json', 'bower.json'],
                 updateConfigs: ['pkg'],
                 commit: true,
                 commitMessage: 'Bump version to v%VERSION%',
-                commitFiles: ['package.json'],
+                commitFiles: ['package.json', 'bower.json'],
                 createTag: false,
                 push: false,
                 globalReplace: false,
