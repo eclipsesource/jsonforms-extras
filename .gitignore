@@ -1,0 +1,35 @@
+# generated files
+dist/
+temp/
+coverage/
+
+# dependencies
+node_modules/
+bower_components/
+
+# all js files in components
+components/**/*.js
+
+# generated typescript reference file in components and tests
+components/references.ts
+tests/references.ts
+
+# all js files in tests except the configs
+tests/**/*.js
+!tests/e2e-tests/protractor.conf.js
+!tests/unit-tests/karma.conf.js
+
+# typescript mappings
+**/*.map
+
+# typescript cache files
+.tscache/
+
+# logs
+*.log
+
+# webstorm
+.idea
+
+# mac users
+.DS_Store
