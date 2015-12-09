@@ -12,9 +12,8 @@ JSONForms Extras includes additional components not contained in JSONForms core.
 JSONForms uses [Grunt](http://gruntjs.com/) to build and test.
 
 * Run ```grunt``` or ```grunt dist``` to build the distribution
-* Run ```grunt test``` to test the framework and the application
-* Run ```grunt watch``` during development to automatically rebuild the distribution and application when any of the development files are touched.
-* Run ```grunt clean:all``` if you want to clean the whole project.
+* Run ```grunt test``` to test the framework
+* Run ```grunt clean:all``` if you want to clean the whole project
 
 # Continuous Integration
 The JSONForms project is build and tested via [Travis](https://travis-ci.org/). Coverage is documented by [Coveralls](https://coveralls.io).
