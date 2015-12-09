@@ -1,6 +1,8 @@
 # JSONForms - Extras
 
-JSONForms Extras includes additional components not contained in JSONForms core.
+JSONForms Extras provides additional components for the JSONForms core.
+
+* Autocomplete Renderer
 
 # First time setup
 * Install node.js (https://nodejs.org/)
