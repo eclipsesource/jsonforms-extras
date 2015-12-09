@@ -65,9 +65,8 @@ module.exports = function(grunt) {
                 }
             },
             test: {
-                src: ['tests/**/*.ts', 'components/references.ts'],
+                src: ['components/**/*spec.ts', 'components/references.ts'],
                 dest: '',
-                reference: 'tests/references.ts',
                 options: {
                     target: 'es5',
                     module: 'commonjs',
@@ -93,7 +92,7 @@ module.exports = function(grunt) {
                 mainModule: 'jsonforms-extras',
                 externalModules: ['jsonforms', 'jsonforms.renderers.controls']
             },
-            examples: {
+            jsonforms_extras: {
                 src:  'components/**/*.js',
                 dest: 'temp/jsonforms-extras.js'
             }
@@ -128,27 +127,8 @@ module.exports = function(grunt) {
         // Config for Karma (Unit Test) Task
         karma: {
             unit: {
-                configFile: 'tests/unit-tests/karma.conf.js',
+                configFile: 'karma.conf.js',
                 singleRun: true
-            }
-        },
-
-        watch: {
-            js: {
-                files: 'components/**',
-                tasks: ['concat:dist', 'uglify:dist']
-            },
-            css: {
-                files: 'css/**',
-                tasks: ['less:bootstrap', 'less:jsonforms']
-            },
-            templates: {
-                files: 'templates/**',
-                tasks: ['ngtemplates:dist', "concat:dist", 'uglify:dist']
-            },
-            examples: {
-                files: ['dist/**'],
-                tasks: ['copy:examples']
             }
         },
 
