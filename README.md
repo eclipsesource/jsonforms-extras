@@ -1,6 +1,6 @@
 # JSONForms - Extras
 
-JSONForms Extras provides additional components for the JSONForms core.
+JSONForms Extras provides additional components for the [JSONForms](https://github.com/eclipsesource/jsonforms) core.
 
 * Autocomplete Renderer
 
