@@ -1,16 +1,10 @@
-///<reference path="../../../references.ts"/>
+///<reference path="../../../references.ts" />
 
 describe('autocomplete renderer', () => {
 
     // load all necessary modules and templates
     beforeEach(module('jsonforms'));
-    //beforeEach(module('jsonforms.pathresolver'));
-    //beforeEach(module('jsonforms.renderers.layouts.vertical'));
-    //beforeEach(module('jsonforms.renderers.layouts.horizontal'));
     beforeEach(module('jsonforms.renderers.controls.autocomplete'));
-
-    //beforeEach(module('components/form/form.html'));
-    //beforeEach(module('components/renderers/controls/control.html'));
 
     it("should render a labeled input field", inject(function ($rootScope, $compile) {
         var scope = $rootScope.$new();
@@ -61,10 +55,6 @@ describe('autocomplete renderer', () => {
         input.triggerHandler('click');
         input.val('Stu');
         input.triggerHandler('input');
-        //scope.$digest();
         scope.$apply();
-
-        //expect(el.find('li').hasClass('ui-menu-item')).toBeTruthy();
-        //expect(el.find('li').html().toContain('Student'));
     }));
 });

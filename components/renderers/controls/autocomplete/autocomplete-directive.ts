@@ -1,4 +1,4 @@
-///<reference path="../../../references.ts"/>
+///<reference path="../../../references.ts" />
 
 angular.module('jsonforms.renderers.controls.autocomplete').directive('autocomplete', ($timeout):ng.IDirective => {
 
